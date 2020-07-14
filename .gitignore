@@ -1,0 +1,8 @@
+dist
+vs-code
+node_modules
+._*
+.git
+.DS_Store
+.AppleDouble
+.LSOverride
