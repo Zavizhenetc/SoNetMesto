@@ -1,5 +1,5 @@
 
-class Card {
+export class Card {
 
   constructor(name, link,  template,  openPicturesCall, likes, id, res){
     this.name = name;

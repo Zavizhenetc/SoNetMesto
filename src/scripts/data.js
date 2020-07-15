@@ -43,7 +43,7 @@
 //     }
 // ];
 
-const errorMessages = {
+export const errorMessages = {
     errorEmpty: "Это обязательное поле",
     errorLength: "Должно быть от 2 до 30 символов",
     errorUrl: "Здесь должна быть ссылка",
