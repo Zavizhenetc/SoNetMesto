@@ -5,21 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mesto</title>
-    <link rel="stylesheet" href="./pages/index.css" />
-    <script src="scripts/Api.js" defer></script>
-    <script src="scripts/data.js" defer></script>
-    <script src="scripts/Card.js" defer></script>
-    <script src="scripts/Popup.js" defer></script>
-    <script src="scripts/CardList.js" defer></script>
-    <script src="scripts/UserInfo.js" defer></script>
-    <script src="scripts/FormValidator.js" defer></script>
-    <script src="scripts/script.js" defer></script>
+    <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.css %>" />
   </head>
 
   <body>
     <div class="root">
       <header class="header root__section">
-        <img src="./images/logo.svg" alt="mesto logo" class="logo" />
+        <img src="<%=require('./images/logo.svg').default%>" alt="mesto logo" class="logo" />
       </header>
       <div class="profile root__section">
         <div class="user-info">
@@ -55,7 +47,7 @@
       <!----------------------- форма newCard ------------------------->
       <div class="popup popup__new-card">
         <div class="popup__content">
-          <img src="./images/close.svg" alt="закрыть" class="popup__close" />
+          <img src="<%=require('./images/close.svg').default%>" alt="закрыть" class="popup__close" />
           <h3 class="popup__title">Новое место</h3>
           <form class="popup__form" name="new" >
             <input
@@ -89,7 +81,7 @@
       <div class="popup popup__edit-info">
         <div class="popup__content">
           <img
-            src="./images/close.svg"
+            src="<%=require('./images/close.svg').default%>"
             alt="закрыть"
             class="popup__close popup__close_edit-info"
           />
@@ -131,7 +123,7 @@
       <div class="popup popup__pictures">
         <div class="popup__content popup__content_pictures">
           <img
-            src="./images/close.svg"
+            src="<%=require('./images/close.svg').default%>"
             alt="закрыть"
             class="popup__close popup__close_pictures"
           />
@@ -139,6 +131,6 @@
         </div>
       </div>
     </div>
-   
+    <script type="module" src="<%= htmlWebpackPlugin.files.js %>"></script>
   </body>
 </html>

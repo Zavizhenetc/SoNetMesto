@@ -1,3 +1,11 @@
+
+import "./index.css";
+import {Api} from "./scripts/Api";
+import {Card} from "./scripts/Card";
+import {CardList} from "./scripts/CardList";
+import {FormValidator} from "./scripts/FormValidator";
+import {Popup} from "./scripts/Popup";
+import {UserInfo} from "./scripts/UserInfo";
 const log = (elem) => {
   console.log(elem);
 };
@@ -8,8 +16,10 @@ const log = (elem) => {
     .content.querySelector(".place-card");
 
   // ================== api
+  const API_URL = NODE_ENV === 'production' ? 'https://praktikum.tk' : 'http://praktikum.tk';
   const config = {
-    baseUrl: "https://praktikum.tk/cohort11",
+    baseUrl: `${API_URL}/cohort11`,
+    // baseUrl: "https://praktikum.tk/cohort11",
     headers: {
       authorization: "5d59240d-10ce-4e5c-b0e4-dbb9bb378332",
       "Content-Type": "application/json",
