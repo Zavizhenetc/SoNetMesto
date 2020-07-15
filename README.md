@@ -1,6 +1,6 @@
 # SoNetMesto   
 
-[Ссылка на проект]()
+[Ссылка на проект](https://zavizhenetc.github.io/SoNetMesto/)
 ### О проекте 
 **v 0.0.1**
 
