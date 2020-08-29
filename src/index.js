@@ -16,7 +16,8 @@ const log = (elem) => {
     .content.querySelector(".place-card");
 
   // ================== api
-  const API_URL = NODE_ENV === 'production' ? 'https://praktikum.tk' : 'http://praktikum.tk';
+  // const API_URL = NODE_ENV === 'production' ? 'https://praktikum.tk' : 'http://praktikum.tk';
+  const API_URL = NODE_ENV === 'production' ? 'https://nomoreparties.co' :  'http://nomoreparties.co';
   const config = {
     baseUrl: `${API_URL}/cohort11`,
     // baseUrl: "https://praktikum.tk/cohort11",
